@@ -38,7 +38,7 @@ img {
 }
 
 #thumbnail-container {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,11 +46,11 @@ img {
 }
 
 #thumbnail-container img {
-    flex-basis: 20%;
-    flex-grow: 1;
-    flex-shrink: 1;
+    /* flex-basis: 20%; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
     border: 1px solid #333;
-    max-width: 120px;
+    max-width: 100px;
     cursor: pointer;
 }
 
@@ -108,7 +108,7 @@ img {
     main {
         width: 100vw;
         height: 100vh;
-        padding: 2%;
+        padding: 1%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
