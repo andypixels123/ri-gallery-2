@@ -38,6 +38,7 @@ img {
 }
 
 #thumbnail-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,6 +80,7 @@ img {
 }
 
 #button-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
