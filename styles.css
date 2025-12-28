@@ -1,0 +1,148 @@
+/* Requirements
+
+    🎯 Implement responsive design methods to ensure the website works well on both small mobile screens and larger desktop screens (e.g., above 800px).
+    🎯 Implement at least one meaningful media query so that there is a noticeable change between mobile and desktop view (an example is to change where the ‘thumbnail bar’ is positioned).
+    🎯 Ensure all images have appropriate alt text attributes for accessibility.
+    🎯 Correctly use event handlers to switch images based on user interactions. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    background-color: #333;
+}
+
+main {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    width: 100%;
+    padding: 2%;
+    /* width: 100vw;
+    height: 100vh;
+    padding: 2vh 2vw; */
+    /* use 'max-width' to restrict gallery width if required */
+    /* can be used on main or with any container inside main */
+    /* max-width: 800px; */
+    /* center element with restricted width */
+    /* margin: auto; */
+}
+
+img {
+    display: block;
+    border-radius: 12px;
+}
+
+.ri {
+    /* responsive image */
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail-container {
+    /* grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#thumbnail-container img {
+    border: 1px solid #333;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+/* #fullscreen-container {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+} */
+
+#fullscreen-container img {
+    max-width: 1850px;
+    max-height: 1200px;
+    margin: 0 auto 15px auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    border: 4px solid lime;
+    opacity: 0.3;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+#button-container {
+    /* grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* @media only screen and (max-width: 800px) {
+    #fullscreen-container {
+        margin-bottom: 15px;
+    }
+
+    #thumbnail-container img {
+        max-width: 100px;
+    }
+} */
+
+/* @media only screen and (max-width: 480px) {
+    #thumbnail-container {
+        gap: 8px;
+    }
+
+    #fullscreen-container {
+        margin-bottom: 8px;
+    }
+
+    img {
+        border-radius: 8px;
+    }
+} */
+
+/* @media only screen and (orientation: landscape) {
+    #fullscreen-container img {
+        width: 96vw;
+        height: 96vh;
+    }
+} */
+
+/* @media only screen and (orientation: portrait) {
+    main {
+        display: block;
+    }
+} */
+
+@media only screen and (orientation: landscape) {
+
+}
