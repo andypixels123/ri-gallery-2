@@ -46,6 +46,9 @@ img {
 }
 
 #thumbnail-container img {
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+    flex-shrink: 1;
     border: 1px solid #333;
     max-width: 120px;
     cursor: pointer;
